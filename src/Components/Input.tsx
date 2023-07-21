@@ -7,7 +7,6 @@ interface InputProps extends Omit<TextFieldProps, 'label'> {
 
 const Input: React.FC<InputProps> = ({label, ...props}) => {
   return <TextField
-    sx={{borderRadius: '30px'}}
     label={label} 
     variant="outlined" 
     {...props} />;

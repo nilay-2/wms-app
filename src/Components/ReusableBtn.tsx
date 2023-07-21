@@ -30,6 +30,7 @@ const reusableBtn : FC<ReusableBtnProps> = ({text, backgroundColor, widthPercent
   return (
     <>
         <Button
+            {...props}
             onClick={onClick}
             sx={buttonStyles}
             type={type}
